@@ -10,6 +10,17 @@
 }
 
 /* ================== GENERAL TAGS SETTINGS ======================= */
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: rgba(12, 3, 27, 0.7);
+  background: rgba(76, 201, 240, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 .container {
   width: 82%;
   margin: 0 auto;

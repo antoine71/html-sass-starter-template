@@ -1,10 +1,14 @@
 /* ================== GENERAL TAGS SETTINGS ======================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    color: $dark-color;
-    background: rgba($primary-color-variant, 0.1);
-    user-select: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  color: $dark-color;
+  background: rgba($primary-color-variant, 0.1);
+  user-select: none;
 }
 
 .container {
@@ -12,7 +16,7 @@ body {
   margin: 0 auto;
 }
 
-img {   
+img {
   display: block;
   width: 100%;
 }
@@ -42,34 +46,31 @@ section {
 }
 
 .btn {
-    @include button;
+  @include button;
 }
 
 .btn-primary {
-    @include button($white-color, $primary-color)
+  @include button($white-color, $primary-color);
 }
-
 
 /* ================== MEDIA QUERIES (MEDIUM SCREENS) ======================= */
 @media screen and (max-width: 1024px) {
-    .container {
-        width: $container-md;
-    }
+  .container {
+    width: $container-md;
+  }
 
-    section {
-        & > p {
-            width: 55%;
-        }
+  section {
+    & > p {
+      width: 55%;
     }
+  }
 }
-
-
 
 /* ================== MEDIA QUERIES (SMALL SCREENS) ======================= */
 @media screen and (max-width: 600px) {
-    section {
-        & > p {
-            width: $container-md;
-        }
+  section {
+    & > p {
+      width: $container-md;
     }
+  }
 }
